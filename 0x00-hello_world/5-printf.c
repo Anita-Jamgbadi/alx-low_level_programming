@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * main -Required to begin the program
  * Return: 0
  */

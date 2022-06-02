@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * main - required to begin the program Return: 0
+ * main -required to begin the program Return: 0
  */
 
 int main(void)

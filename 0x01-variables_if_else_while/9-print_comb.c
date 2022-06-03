@@ -12,11 +12,11 @@ int main(void)
 
 	n = 0;
 
-	while (n < 10)
+	while (n < '10')
 	{
 		putchar(n);
 
-		if (n <= 8)
+		if (n <= '8')
 		{
 			putchar(',');
 			putchar(' ');

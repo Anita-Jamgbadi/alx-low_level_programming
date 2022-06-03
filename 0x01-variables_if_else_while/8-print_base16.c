@@ -13,7 +13,7 @@ int main(void)
 	n = 0;
 	c = 'a';
 
-	while (n <= 16)
+	while (n < 16)
 	{
 		if (n < 10)
 		{
@@ -26,5 +26,6 @@ int main(void)
 		}
 		n++;
 	}
+	putchar('\n');
 	return (0);
 }

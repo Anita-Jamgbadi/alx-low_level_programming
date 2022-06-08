@@ -6,7 +6,7 @@
  * Return: 0 always
  */
 
-int main(void)
+void print_alphabet(void)
 {
 	char currentLetter;
 	currentLetter = 'a';

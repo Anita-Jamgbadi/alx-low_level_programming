@@ -17,5 +17,5 @@ int _isupper(int c)
 	{
 		value = 0;
 	}
-	return (value)
+	return (value);
 }

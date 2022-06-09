@@ -1,17 +1,14 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 -printa alphabet 10x
- * Return: void;
+ * print_alphabet_x10 - prints the alphabet 10X
+ * Return: 0
  */
 
 void print_alphabet_x10(void)
 {
 	char ch;
-	int i;
-
-	ch = 'a';
-	i = 0;
+	int i = 0;
 
 	while (i < 10)
 	{

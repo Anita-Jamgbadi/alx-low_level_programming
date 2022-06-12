@@ -8,6 +8,7 @@ void times_table(void)
 {
 	int row;
 	int col;
+	int res;
 
 	for (row = 0; row < 10; row++)
 	{
@@ -15,12 +16,14 @@ void times_table(void)
 		{
 			if (col <= 0)
 			{
-				_putchar(col);
+				res = col;
+				_putchar('res');
 			};
 
-			if (col >= 1)
+			if (col > 0)
 			{
-				_putchar(col * row);
+				res = col * row;
+				_putchar('res');
 			};
 
 			if (col < 9)

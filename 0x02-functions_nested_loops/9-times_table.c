@@ -15,20 +15,21 @@ void times_table(void)
 		{
 			if (col <= 0)
 			{
-				putchar(col);
+				_putchar(col);
 			};
-			
+
 			if (col >= 1)
 			{
-				putchar(col * row);
+				_putchar(col * row);
 			};
 
 			if (col < 9)
 			{
-				putchar(", ");
+				_putchar(',');
+				_putchar(' ');
 			};
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
 

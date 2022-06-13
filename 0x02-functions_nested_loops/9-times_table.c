@@ -16,13 +16,13 @@ void times_table(void)
 		{
 			if (col <= 0)
 			{
-				res = col;
+				res = col % 10;
 				_putchar(res + '0');
 			}
 
 			if (col > 0)
 			{
-				res = col * row;
+				res = (col * row) % 10;
 				_putchar(res + '0');
 			}
 

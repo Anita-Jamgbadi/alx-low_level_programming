@@ -27,7 +27,8 @@ void times_table(void)
 			if (res > 9)
 			{
 				_putchar('0' + (res / 10));
-				_putchar('0' + (res % 10))
+				_putchar('0' + (res % 10));
+			}
 
 			if (col < 9)
 			{

@@ -17,20 +17,20 @@ void times_table(void)
 			if (col <= 0)
 			{
 				res = col;
-				_putchar(res);
-			};
+				_putchar(res + '0');
+			}
 
 			if (col > 0)
 			{
 				res = col * row;
-				_putchar(res);
-			};
+				_putchar(res + '0');
+			}
 
 			if (col < 9)
 			{
 				_putchar(',');
 				_putchar(' ');
-			};
+			}
 		}
 		_putchar('\n');
 	}

@@ -14,17 +14,20 @@ void times_table(void)
 	{
 		for (col = 0; col < 10; col++)
 		{
-			if (col <= 0)
+			res = row * col;
+			if (col == 0)
 			{
-				res = col;
 				_putchar(res + '0');
 			}
 
-			if (col > 0)
+			if (col > 0 && res <= 9)
 			{
-				res = (col * row) % 10;
 				_putchar(res + '0');
 			}
+			if (res > 9)
+			{
+				_putchar('0' + (res / 10));
+				_putchar('0' + (res % 10))
 
 			if (col < 9)
 			{
@@ -35,4 +38,5 @@ void times_table(void)
 		_putchar('\n');
 	}
 }
+
 

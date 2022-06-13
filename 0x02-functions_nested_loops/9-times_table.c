@@ -23,19 +23,19 @@ void times_table(void)
 			if (col > 0 && res <= 9)
 			{
 				_putchar(res + '0');
+				_putchar(' ');
 			}
 			if (res > 9)
 			{
 				_putchar('0' + (res / 10));
 				_putchar('0' + (res % 10));
+				_putchar(' ');
+				_putchar(' ');
 			}
 
 			if (col < 9)
 			{
 				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(' ');
 			}
 		}
 		_putchar('\n');

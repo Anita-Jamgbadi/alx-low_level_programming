@@ -28,8 +28,8 @@ void print_rev(char *s)
 		else
 		{
 			_putchar(s[slen]);
-			slen--;
 		}
+		slen++;
 	}
 	_putchar('\n');
 }

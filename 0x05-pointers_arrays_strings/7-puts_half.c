@@ -17,11 +17,13 @@ void puts_half(char *str)
 		len++;
 	}
 
-	halfLen = len / 2;
 
-	for (i = 0; i <= halfLen; i++)
+	for (i = 0; i <= len; i++)
 	{
-		_putchar(str[i]);
+		if (i >= len / 2)
+		{
+			_putchar(str[i]);
+		}
 	}
 	_putchar('\n');
 }

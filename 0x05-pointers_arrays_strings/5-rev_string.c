@@ -16,20 +16,7 @@ void rev_string(char *s)
 		len++;
 	}
 
-	while (len >= 0)
-	{
-		if (s[len] == '\0')
-		{
-		}
-		/*
-		*else
-		*{
-		*	_putchar(s[len]);
-		*}
-		*
-		*/
-		len--;
-	}
+	len = len - 1;
 	s = &s[len];
 
 }

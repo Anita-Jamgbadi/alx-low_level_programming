@@ -20,10 +20,11 @@ void print_array(int *a, int n)
 		}
 		else
 		{
-			printf("%d", a[i]);
+			printf("%d", a[n]);
 			break;
 		}
 
 		i++;
 	}
+	_putchar('\n');
 }

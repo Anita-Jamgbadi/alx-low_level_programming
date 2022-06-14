@@ -11,10 +11,6 @@ void puts2(char *str)
 	int len;
 
 	len = 0;
-	while (len != '\0')
-	{
-		len++;
-	}
 
 	while (str[len] != '\0')
 	{
@@ -22,6 +18,7 @@ void puts2(char *str)
 		{
 			_putchar(str[len]);
 		}
-		len--;
+		len++;
 	}
+	_putchar('\n');
 }

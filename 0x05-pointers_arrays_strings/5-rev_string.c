@@ -16,5 +16,16 @@ void rev_string(char *s)
 		len++;
 	}
 
-	*s = s[len];
+	while (len >= 0)
+	{
+		if (s[len] == '\0')
+		{
+		}
+		else
+		{
+			_putchar(s[len]);
+		}
+		len--;
+	}
+
 }

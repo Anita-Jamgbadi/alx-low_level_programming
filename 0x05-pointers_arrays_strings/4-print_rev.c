@@ -13,16 +13,23 @@ void print_rev(char *s)
 	slen = 0;
 	len = 0;
 
-	while(s[len] != '\0')
+	while (s[len] != '\0')
 	{
 		slen++;
 		len++;
 	}
 
-	while (slen >= 0 && s[slen] != '\0')
+	while (slen >= 0)
 	{
-		_putchar(s[slen]);
-		slen--;
+		if (s[slen] == '\0')
+		{
+		}
+
+		else
+		{
+			_putchar(s[slen]);
+			slen--;
+		}
 	}
 	_putchar('\n');
 }

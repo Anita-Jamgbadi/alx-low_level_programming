@@ -21,10 +21,12 @@ void rev_string(char *s)
 		if (s[len] == '\0')
 		{
 		}
-		else
-		{
-			_putchar(s[len]);
-		}
+		/*
+		*else
+		*{
+		*	_putchar(s[len]);
+		*}
+		*/
 		len--;
 	}
 

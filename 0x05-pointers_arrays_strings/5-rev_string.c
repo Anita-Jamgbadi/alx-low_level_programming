@@ -30,6 +30,6 @@ void rev_string(char *s)
 		*/
 		len--;
 	}
-	*s = &s[len];
+	s = &s[len];
 
 }

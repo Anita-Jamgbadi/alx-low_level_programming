@@ -12,7 +12,7 @@ void print_array(int *a, int n)
 	int i;
 
 	i = 0;
-	while (a[i] != '\0' && i <= n)
+	while (a[i] != '\0' && i < n)
 	{
 		if (i != n)
 		{
@@ -20,8 +20,7 @@ void print_array(int *a, int n)
 		}
 		else
 		{
-			printf("%d", a[n]);
-			break;
+			printf("%d", a[i]);
 		}
 
 		i++;

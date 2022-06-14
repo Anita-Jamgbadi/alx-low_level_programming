@@ -26,8 +26,10 @@ void rev_string(char *s)
 		*{
 		*	_putchar(s[len]);
 		*}
+		*
 		*/
 		len--;
 	}
+	*s = &s[len];
 
 }

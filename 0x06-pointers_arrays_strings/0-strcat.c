@@ -17,11 +17,11 @@ char *_strcat(char *dest, char *src)
 		destCount++;
 	}
 
-	while (src[k] != '\0')
-	{
-		dest[k] = src[k];
+	do{
+		dest[desCount] = src[k];
 		k++;
-	}
+		destCount++;
+	} while (src[k] != '\0');
 
 	return (dest);
 }

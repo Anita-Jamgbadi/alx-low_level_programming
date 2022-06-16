@@ -16,25 +16,21 @@ char *leet(char *c)
 		{
 			c[i] = '4';
 		}
-		else if (c[i] == 'e' || c[i] == 'E')
+		if (c[i] == 'e' || c[i] == 'E')
 		{
 			c[i] = '3';
 		}
-		else if (c[i] == 'o' || c[i] == 'O')
+		if (c[i] == 'o' || c[i] == 'O')
 		{
 			c[i] = '0';
 		}
-		else if (c[i] == 't' || c[i] == 'T')
+		if (c[i] == 't' || c[i] == 'T')
 		{
 			c[i] = '7';
 		}
-		else if (c[i] == 'l' || c[i] == 'L')
+		if (c[i] == 'l' || c[i] == 'L')
 		{
 			c[i] = '1';
-		}
-		else
-		{
-			c[i] = c[i];
 		}
 		i++;
 	}

@@ -12,10 +12,18 @@ void reverse_array(int *a, int n)
 	i = n;
 	j = 0;
 
-	while (i > 0)
+	if (n == 0)
 	{
-		a[j] = a[i];
-		j++;
-		i++;
+		a[0] = a[0];
+	}
+	else
+	{
+		while (i > 0)
+		{
+			a[j] = a[i];
+			j++;
+			i++;
+		
+		}
 	}
 }

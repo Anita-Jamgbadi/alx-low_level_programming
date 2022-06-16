@@ -15,14 +15,13 @@ char *_strcat(char *dest, char *src)
 	{
 		destCount++;
 	}
-
-	if (dest[destCount] == '\0')
+	
+	for (k = 0; src[k] != '\0'; k++)
 	{
-		for (k = 0; src[k] != '\0'; k++)
-		{
-			dest[destCount++] = src[k];
-		}
+		dest[destCount++] = src[k];
 	}
+
+	dest[destCount] = '\0';
 
 	return (dest);
 }

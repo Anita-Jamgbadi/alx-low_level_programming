@@ -13,27 +13,27 @@ char *leet(char *c)
 	i = 0;
 	while (c[i] != '\0')
 	{
-		if (c[i] == 'a' || c[i] == 'A')
+		while (c[i] == 'a' || c[i] == 'A')
 		{
 			c[i] = '4';
 		}
-		else if (c[i] == 'e' || c[i] == 'E')
+		while (c[i] == 'e' || c[i] == 'E')
 		{
 			c[i] = '3';
 		}
-		else if (c[i] == 'o' || c[i] == 'O')
+		while (c[i] == 'o' || c[i] == 'O')
 		{
 			c[i] = '0';
 		}
-		else if (c[i] == 't' || c[i] == 'T')
+		while (c[i] == 't' || c[i] == 'T')
 		{
 			c[i] = '7';
 		}
-		else if (c[i] == 'l' || c[i] == 'L')
+		while (c[i] == 'l' || c[i] == 'L')
 		{
 			c[i] = '1';
 		}
-		else
+		while
 		{
 			c[i] = c[i];
 		}

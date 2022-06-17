@@ -2,38 +2,31 @@
 
 /**
  * leet - creates code 1337
- * @c: points to string
+ * @s: points to string
  * Return: @c
  */
 
-char *leet(char *c)
+char *leet(char *s)
 {
-	int i;
+	int stringC, leetC;
+	char leetLets[] = "aAeEoOtTlL";
+	char leetNum[] = "4433007711";
 
-	i = 0;
-	while (c[i] != '\0')
+	stringC = 0;
+
+	while (s[stringC] != '\0')
 	{
-		if (c[i] == 'a' || c[i] == 'A')
+		leetC = 0;
+
+		while (leetC < 10)
 		{
-			c[i] = '4';
+			if (leetLets[leetC] == s[stringC])
+			{
+				s[stringC] = leetNum[leetC];
+			}
+			leetC++;
 		}
-		while (c[i] == 'e' || c[i] == 'E')
-		{
-			c[i] = '3';
-		}
-		while (c[i] == 'o' || c[i] == 'O')
-		{
-			c[i] = '0';
-		}
-		while (c[i] == 't' || c[i] == 'T')
-		{
-			c[i] = '7';
-		}
-		while (c[i] == 'l' || c[i] == 'L')
-		{
-			c[i] = '1';
-		}
-		i++;
+		stringC++;
 	}
-	return (c);
+	return (s);
 }

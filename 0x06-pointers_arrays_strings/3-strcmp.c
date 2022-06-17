@@ -25,19 +25,15 @@ int _strcmp(char *s1, char *s2)
 
 	if (i < j)
 	{
-		res = 0;
+		res = -1;
 	}
 	else if (i == j)
 	{
-		res = 1;
+		res = 0;
 	}
 	else if (i > j)
 	{
-		res = i - j;
+		res = 1;
 	}
-	else
-	{
-	}
-
 	return (res);
 }

@@ -33,10 +33,6 @@ char *leet(char *c)
 		{
 			c[i] = '1';
 		}
-		while
-		{
-			c[i] = c[i];
-		}
 		i++;
 	}
 	return (c);

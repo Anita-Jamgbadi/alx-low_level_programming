@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * _strstr - finds needle in haystack
@@ -9,21 +10,9 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j, start;
+	char *p = haystack;
 
-	i = j = 0;
+	haystack = strstr(p, needle);
 
-	while (haystack[i] != '\0')
-	{
-		while (needle[j] != '\0')
-		{
-			if (needle[j] == haystack[i] && needle[j++] == haystack[i++])
-			{
-				start = i;
-			}
-			j++;
-		}
-		i++;
-	}
-	return (&haystack[start]);
+	return (haystack);
 }

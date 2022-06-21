@@ -19,21 +19,22 @@ char *_strchr(char *s, char c)
 		len++;
 	}
 
-	while (s[i] != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == c)
 		{
 			ptr = &s[i];
+			break;
 		}
 		if (s[i] != c && s[i] == s[len])
 		{
 			ptr = NULL;
+			break;
 		}
 		else
 		{
 			continue;
 		}
-		i++;
 	}
 	return (ptr);
 }

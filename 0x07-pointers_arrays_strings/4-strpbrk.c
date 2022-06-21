@@ -10,40 +10,10 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j, res, finalCnt;
-	int raid[40];
-	unsigned long int arrayCnt, minCnt;
+	char *ch = s;
 
-	i = j = arrayCnt = finalCnt = 0;
-	while (s[i] != '\0')
-	{
-		while (accept[j] != '\0')
-		{
-			if (accept[j] == s[i])
-			{
-				while (arrayCnt < (sizeof(raid) / sizeof(raid[0])))
-				{
-					raid[arrayCnt] = i;
-					arrayCnt++;
-				}
-			}
-			j++;
-		}
-		i++;
-	}
-	res = raid[0];
-	for (minCnt = 0; minCnt < (sizeof(raid) / sizeof(raid[0])); minCnt++)
-	{
-		if (raid[minCnt] < res)
-			res = raid[minCnt];
-	}
-	if (res >= 0)
-		while (s[finalCnt] != '\0')
-		{
-			if (s[finalCnt] == res)
-				return (&s[finalCnt]);
-			finalCnt++;
-		}
+	ch = strpbrk(s, accept);
+	s = ch;
 
-	return (NULL);
+	return (s);
 }

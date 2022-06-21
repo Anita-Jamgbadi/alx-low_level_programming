@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * memset - fills first n bytes of *s with const b
+ * _memset - fills first n bytes of *s with const b
  * @s: src
  * @b: const byte
  * @n: no of bytes to fill

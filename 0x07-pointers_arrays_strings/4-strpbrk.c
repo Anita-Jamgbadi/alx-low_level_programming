@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <string.h>
 
 /**
  * _strpbrk - first occurence of any byte in accept within s

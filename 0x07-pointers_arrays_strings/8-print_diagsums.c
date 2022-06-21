@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_diagsums - print diagonal sums from arrays
@@ -8,11 +9,21 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i, j;
+	int i, s1, s2;
 
-	i = j = 0;
-	while (*a[i] != '\0')
+	s1 = s2 = 0;
+	for (i = 0; i < size; i++)
 	{
-		while (j < size)
-		{
+		s1 += a[i];
+		a += size;
+	}
 
+	a -= size;
+
+	for (i = 0; i < size; i++)
+	{
+		s2 += a[i];
+		a -= size;
+	}
+	printf("%d, %d\n", s1, s2);
+}

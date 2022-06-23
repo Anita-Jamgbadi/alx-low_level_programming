@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * getEnd - gets the end of a string
- * _print_rev_recursion - prints a string in reverse using recursion
+ * _print_rev_recursion - prints a string in reverse using recursion;
+ * getEnd - gets the end of a string;
  * @s: string to be reversed
+ * Return: getEnd returns the end of the string
  */
 
 char getEnd(char *s)
@@ -20,7 +21,7 @@ void _print_rev_recursion(char *s)
 {
 	char *res;
 	char **tmp;
-	
+
 	tmp = &s;
 
 	getEnd(s);

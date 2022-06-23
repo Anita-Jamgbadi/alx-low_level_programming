@@ -3,18 +3,22 @@
 /**
  * is_prime_number - Checks for prime number
  * @n: int
+ * isPrime - evaluate if number is prime
+ * @a: int
+ * @b: int
+ * Return: int
  */
 
 int isPrime(int a, int b);
 int is_prime_number(int n)
 {
 	int i = 2;
-	
+
 	if (i == 1)
 	{
 		return (1);
 	}
-	return (isPrime (i, n));
+	return (isPrime(i, n));
 }
 
 /**

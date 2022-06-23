@@ -6,14 +6,23 @@
  * Return: Square root or -1
  */
 
+int tester(int a, int b);
+
 int _sqrt_recursion(int n)
 {
 	if (n == 0)
-		res = 0;
+		return (0);
 	return (tester(1, n));
 }
 
-int tester(int n, int b)
+/**
+ * tester - tests for square root
+ * @a: var
+ * @b: var
+ * Return: int
+ */
+
+int tester(int a, int b)
 {
 	if (a * a > b)
 		return (-1);

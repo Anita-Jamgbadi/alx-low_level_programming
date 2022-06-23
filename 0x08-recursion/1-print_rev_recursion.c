@@ -8,9 +8,10 @@
 
 char getEnd(char *s)
 {
-	while (*s != '\0')
+	if (*s != '\0')
 	{
 		s++;
+		getEnd(s);
 	}
 	return (*s);
 }

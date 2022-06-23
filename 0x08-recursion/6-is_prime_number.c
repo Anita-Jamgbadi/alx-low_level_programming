@@ -5,6 +5,7 @@
  * @n: int
  */
 
+int isPrime(int a, int b);
 int is_prime_number(int n)
 {
 	int i = 2;

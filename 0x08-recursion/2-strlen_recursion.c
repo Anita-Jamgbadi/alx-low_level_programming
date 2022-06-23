@@ -6,12 +6,13 @@
  * Return: length of @s;
  */
 
+int i;
+
+i = 0;
+
 int _strlen_recursion(char *s)
 {
-	int i;
 	char *tmp;
-
-	i = 0;
 
 	if (*s != '\0')
 	{

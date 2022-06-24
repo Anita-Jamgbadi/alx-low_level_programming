@@ -4,11 +4,16 @@
  * main - prints its name followed by a new line
  * @argc: counter
  * @argv: array of arguments
- * Return: EXIT_SUCCESS
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
 {
-	printf("./%s\n", argc);
-	return (EXIT_SUCCESS);
+	int i;
+
+	for (i = 0; i < argc; i++)
+	{
+		printf("%s\n", argv[i]);
+	}
+	return (0);
 }

@@ -12,23 +12,25 @@
 
 int main(int argc, char *argv[])
 {
-	int res, i;
+	int res, i, j;
 
-	if (argc < 3)
-	{
-		printf("0\n");
-	}
+	res = i = 0;
+
 	for (i = 1; i < argc; i++)
 	{
-		if (atoi(argv[i]) >= 0 && isdigit(atoi(argv[i])))
+		for (j = 0; argv[i][j]; j++)
 		{
-			res += atoi(argv[i]);
+			if (isdigit(argv[i][j]) == 0)
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+	}
+
+	for (i = 1; i < argc; i++)
+	{
+		res += atoi(argv[i]);
 	}
 	printf("%d\n", res);
 	return (0);

@@ -5,11 +5,14 @@
  * main - Prints out the number of arguments passed to it
  * @argc: counter
  * @argv: argument vector
- * Return: EXIT_SUCCESS
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
 {
-	printf("%d\n", argc);
-	return (EXIT_SUCCESS);
+	if (argc && argv)
+	{
+		printf("%d\n", argc);
+	}
+	return (0);
 }

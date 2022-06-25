@@ -1,12 +1,19 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - get the square root of a number n
- * @n: variable
- * Return: Square root or -1
+ * tester - test square root
+ * @a: var
+ * @b: var
+ * Return: int
  */
 
 int tester(int a, int b);
+
+/**
+ * _sqrt_recursion - get the sqqrt of n with recursion
+ * @n: var
+ * Return: sqrt or -1
+ */
 
 int _sqrt_recursion(int n)
 {

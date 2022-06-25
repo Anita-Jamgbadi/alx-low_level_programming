@@ -7,7 +7,7 @@
  *    * @c: return int type
  *     *
  *      * Return: return 0 on success and 1 on fail
- *       */
+ */
 
 int _isdigit(int c)
 {

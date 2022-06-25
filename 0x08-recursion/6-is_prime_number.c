@@ -2,7 +2,6 @@
 
 /**
  * is_prime_number - Checks for prime number
- * @n: int
  * isPrime - evaluate if number is prime
  * @a: int
  * @b: int

@@ -28,6 +28,5 @@ char *create_array(unsigned int size, char c)
 	if (ptr != NULL)
 		return (ptr);
 
-	free(ptr);
 	return (NULL);
 }

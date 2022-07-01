@@ -19,7 +19,42 @@ int string_count(char *s2)
 	}
 	return (i);
 }
-		
+
+/**
+ * cutter - handles string_concat if i > n
+ * @s1: s1
+ * @n: num
+ * @i: num
+ * @s2: s2
+ * Return: ptr
+ */
+
+char *cutter(char *s1, char *s2, unsigned int n, unsigned int i)
+{
+	char *ptr;
+	unsigned int k, j;
+
+	ptr = malloc(sizeof(s1));
+	if (!ptr)
+		return (NULL);
+	if (i > n)
+	{
+		k = 0;
+		while (s1[k] != '\0')
+		{
+			k++;
+		}
+		j = 0;
+		while (j <= i && s2[j] != '\0')
+		{
+			s1[k++] = s2[j];
+			j++;
+		}
+		s1[k++] = '\0';
+	}
+	return (ptr);
+}
+
 /**
  * string_nconcat - concat @n bytes of @s2 to @s1
  * @n: number od bytes to use. If n >= length of s2,
@@ -31,8 +66,7 @@ int string_count(char *s2)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, k;
-	int j;
+	unsigned int i, k, j;
 	char *ptr;
 
 	ptr = malloc(sizeof(s1));
@@ -48,18 +82,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		}
 		s1[j++] = *s2;
 		s1[j++] = '\0';
-	       return (ptr);	
+		return (ptr);
 	}
-	else
-		i = string_count(s2);
+	i = string_count(s2);
 	if (i < n)
 	{
-		j = 0;
+		j = k = 0;
 		while (s1[j] != '\0')
 		{
 			j++;
 		}
-		k = 0;
 		while (k <= i)
 		{
 			s1[j++] = s2[k];
@@ -70,20 +102,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else if (i > n)
 	{
-		j = 0;
-		while (s1[j] != '\0')
-		{
-			j++;
-		}
-		i = 0;
-		while (i <= n && s2[n] != '\0')
-		{
-			s1[j++] = s2[i];
-			i++;
-		}
-		s1[j++] = '\0';
+		ptr = cutter(s1, s2, n, i);
 		return (ptr);
 	}
 	return (NULL);
 }
-		

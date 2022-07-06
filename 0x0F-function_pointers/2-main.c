@@ -39,6 +39,17 @@ int abs_is_98(int elem)
 }
 
 /**
+ * is_1111 - checks for 1111
+ * @elem: element to crosscheck
+ * Return: 0 or something else
+ */
+
+int is_1111(int elem)
+{
+	return (1111 == elem);
+}
+
+/**
  * main - check the code
  *
  * Return: Always 0.
@@ -53,6 +64,10 @@ int main(void)
 	index = int_index(array, 20, abs_is_98);
 	printf("%d\n", index);
 	index = int_index(array, 20, is_strictly_positive);
+	printf("%d\n", index);
+	index = int_index(array, 20, is_1111);
+	printf("%d\n", index);
+	index = int_index(array, 0, is_1111);
 	printf("%d\n", index);
 	return (0);
 }

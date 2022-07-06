@@ -1,6 +1,4 @@
 #include "function_pointers.h"
-#include <stdio.h>
-#include <stddef.h>
 
 /**
  * printer - prints a string

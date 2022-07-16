@@ -6,9 +6,11 @@
  **
  ** Return: Always 0.
  **/
+
+void print_first(void);
 int main(void)
 {
-	print_first;
+	print_first();
 	printf("(A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)\n");
 	return (0);
 }

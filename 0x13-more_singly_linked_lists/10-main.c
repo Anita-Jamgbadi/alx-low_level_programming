@@ -29,10 +29,13 @@ int main(void)
 	printf("index start-----------------\n");
 	delete_nodeint_at_index(&head, 0);
 	print_listint(head);
-	printf("index end-----------------\n");
-	delete_nodeint_at_index(&head, 6);
+	printf("index start-----------------\n");
+	delete_nodeint_at_index(&head, 0);
 	print_listint(head);
-	printf("index -1\n-----------------\n");
+	printf("index end-----------------\n");
+	delete_nodeint_at_index(&head, 5);
+	print_listint(head);
+	printf("index -1-----------------\n");
 	delete_nodeint_at_index(&head, -1);
 	print_listint(head);
 	printf("-----------------\n");

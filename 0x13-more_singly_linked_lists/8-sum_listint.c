@@ -6,6 +6,7 @@
 /**
  * sum_listint - sum all data in the nodes of a given list
  * @head: head node of list
+ * Return: sum of list data
  */
 
 int sum_listint(listint_t *head)

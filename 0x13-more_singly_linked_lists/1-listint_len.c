@@ -14,7 +14,7 @@ size_t listint_len(const listint_t *h)
 	unsigned int nodeCount;
 
 	if (h == NULL)
-		return (NULL);
+		return (0);
 
 	nodeCount = 0;
 	while (h != NULL)

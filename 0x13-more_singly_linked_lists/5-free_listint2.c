@@ -13,15 +13,12 @@ void free_listint2(listint_t **head)
 {
 	listint_t *temp;
 	listint_t *realHead;
-	int *ptr;
 
 	realHead = *head;
 	while (realHead->next != NULL)
 	{
 		temp = realHead->next;
 		realHead->next = realHead->next->next;
-		ptr = &temp->n;
-		free(ptr);
 		free(temp);
 	}
 }

@@ -15,10 +15,10 @@ void free_listint2(listint_t **head)
 	listint_t *realHead;
 
 	realHead = *head;
-	while (realHead->next != NULL)
+	while (realHead != NULL)
 	{
-		temp = realHead->next;
-		realHead->next = realHead->next->next;
+		temp = realHead;
+		realHead = realHead->next;
 		free(temp);
 	}
 	*head = NULL;

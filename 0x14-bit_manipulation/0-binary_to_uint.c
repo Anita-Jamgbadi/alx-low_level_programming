@@ -27,18 +27,18 @@ unsigned int power(unsigned int n, unsigned int p)
 
 unsigned int binToInt(const char *b)
 {
-	unsigned int len, count, result, powa;
+	unsigned int len, count, result, powa, conv, zero;
 
 	len = strlen(b);
-	count = result = 0;
+	count = result = zero = 0;
 	powa = len - 1;
 	while (count < len)
 	{
-		/*
-		if ((b[count] < 0) || (b[count] > 1))
+		conv = b[count] - '0';
+		if ((conv < zero) || (conv > 1))
 			return (0);
-		*/
-		result += (b[count] * power(2, powa));
+
+		result += conv * power(2, powa);
 		count++;
 		powa--;
 	}

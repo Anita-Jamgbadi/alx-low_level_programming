@@ -14,5 +14,5 @@ void print_binary(unsigned long int n)
 		print_binary(n >> 2);
 	while (n >= 2)
 		n = n - 2;
-	printf("%lu", n);
+	_putchar(n + '0');
 }

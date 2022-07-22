@@ -4,6 +4,7 @@
 /**
  * flip_bits - returns the number of bits that would need to be flipped
  * @n: number
+ * @m: int
  * Return: number of bits to be flipped
  */
 

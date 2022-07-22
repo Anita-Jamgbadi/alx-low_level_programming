@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-/** 
+/**
  * set_bit - sets bit at given index to 1
  * @n: points to int for operation
  * @index: index to be changed

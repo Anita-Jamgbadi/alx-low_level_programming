@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
-		
+	
 /**
  * get_bit - gets the bit at any position of a given int converted
  * to binary

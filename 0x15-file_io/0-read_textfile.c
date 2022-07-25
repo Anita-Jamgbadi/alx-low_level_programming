@@ -29,7 +29,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd == i)
 		return (0);
 
-	cell = malloc(sizeof(char *) * letters);
+	cell = malloc(sizeof(char) * letters);
 	if (cell == NULL)
 		return (0);
 

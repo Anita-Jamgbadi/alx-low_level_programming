@@ -17,7 +17,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	unsigned int fd, i;
+	unsigned int fd, i, rd;
 	unsigned int rd_success;
 	char *cell;
 
@@ -33,10 +33,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (cell == NULL)
 		return (0);
 
-	read(fd, cell, letters);
+	rd = read(fd, cell, letters);
+	if (rd == i)
+		return (0);
 
 	rd_success = printf("%s", cell);
-	if (rd_success < letters)
+	if (rd_success == i)
 		return (0);
 	close(fd);
 	free(cell);

@@ -22,14 +22,13 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (filename == NULL)
 		return (-1);
 	fd = open(filename, O_APPEND | O_WRONLY);
-	if (access(filename, F_OK))
+	if (fd == -1)
+		return (-1);
+	if (text_content != NULL)
 	{
-		if (text_content != NULL)
-		{
-			wd = write(fd, text_content, strlen(text_content));
-			if (wd == -1)
-				return (-1);
-		}
+		wd = write(fd, text_content, strlen(text_content));
+		if (wd == -1)
+			return (-1);
 	}
 	close(fd);
 	return (1);

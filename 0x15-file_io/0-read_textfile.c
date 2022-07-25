@@ -36,8 +36,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	rd = read(fd, cell, letters);
 	if (rd == i)
 		return (0);
-
-	rd_success = printf("%s", cell);
+	rd_success = write(STDOUT_FILENO, cell, rd);
 	if (rd_success == i)
 		return (0);
 	close(fd);

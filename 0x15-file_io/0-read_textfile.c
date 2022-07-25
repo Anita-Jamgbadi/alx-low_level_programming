@@ -36,7 +36,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	read(fd, cell, letters);
 
 	rd_success = printf("%s", cell);
-
+	if (rd_success < letters)
+		return (0);
 	close(fd);
 	free(cell);
 	return (rd_success);

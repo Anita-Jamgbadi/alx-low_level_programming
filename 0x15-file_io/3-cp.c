@@ -9,17 +9,25 @@
 #include <string.h>
 
 /**
- * cp_file - copy content of source file to destination file
- * @file_from: source file
- * @file_to: destination file
+ * main - copy content of source file to destination file
+ * @ac: source file
+ * @av: destination file
  * Return: 1 on success
  */
 
-int cp_file(const char *file_from, const char *file_to)
+int main(int ac, char **av)
 {
 	int fd, fdd;
 	char *buffer;
 
+	char *file_from = av[1];
+	char *file_to = av[2];
+
+	if (ac != 3)
+	{
+		printf("Error: not enough arguments\n");
+		exit(97);
+	}
 	if (!file_from || !file_to)
 	{
 		printf("Usage: cp file_from file to\n");

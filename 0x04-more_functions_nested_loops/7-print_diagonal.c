@@ -2,6 +2,8 @@
 
 /**
  * print_diagonal - prints a diagnal line on the terminal
+ *
+ * @n: size of diagonal
  */
 
 void print_diagonal(int n)

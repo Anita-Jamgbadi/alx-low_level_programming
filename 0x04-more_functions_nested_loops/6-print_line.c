@@ -20,6 +20,7 @@ void print_line(int n)
 			i++;
 		}
 	}
+	_putchar('$');
 	_putchar('\n');
 }
 

@@ -1,14 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - prints 0 - 100, But for multiples of three
+ * fizz_buzz - prints 0 - 100, But for multiples of three
  * print Fizz instead of the number and for the multiples of five print Buzz.
  * For numbers which are multiples of both three and five print FizzBuzz
- *
- * Return: 100
  */
 
-int main(void)
+void fizz_buzz(void)
 {
 	int i = 1;
 
@@ -25,5 +23,15 @@ int main(void)
 		i++;
 	}
 	printf("\n");
-	return (i);
+}
+
+/**
+ * main - calls fizzbuzz
+ * Return: 0
+ */
+
+int main(void)
+{
+	fizz_buzz();
+	return (0);
 }

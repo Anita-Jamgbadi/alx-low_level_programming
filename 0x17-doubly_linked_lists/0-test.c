@@ -28,6 +28,7 @@ int main(void)
 	new->prev = NULL;
 	head = new;
 	n = print_dlistint(head);
+	print_dlistint(0);
 	printf("-> %lu elements\n", n);
 	free(new);
 	return (EXIT_SUCCESS);

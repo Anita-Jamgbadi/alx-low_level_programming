@@ -1,0 +1,4 @@
+objects = *.c
+
+all : $(objects)
+	gcc $(objects) -o school
